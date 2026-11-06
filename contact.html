@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Siyakha Productions</title>
+<meta name="description" content="Send an enquiry to Siyakha Productions about technical sound and live staging or print solutions.">
+<meta property="og:title" content="Contact | Siyakha Productions">
+<meta property="og:description" content="Send an enquiry to Siyakha Productions about technical sound and live staging or print solutions.">
+<meta property="og:type" content="website">
+<!-- Add og:url, og:image and a canonical link once the final domain is confirmed -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Siyakha Productions home"><img src="assets/logos/siyakha-logo.jpg" alt="Siyakha Productions logo" width="100" height="56"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="about.html">About Us</a><a href="technical-sound.html">Technical Sound</a><a href="printing.html">Printing</a><a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn" href="contact.html">Get in touch</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero ">
+    <div class="wrap">
+      <h1>Contact us</h1>
+      <p class="lead">Tell us what you need and which division it is for.</p>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="form-title">
+    <div class="wrap">
+      <div class="contact-info">
+        <h2>How to reach us</h2>
+        <!-- Add verified phone, email and address here (use tel: and mailto: links) -->
+        <p>Use the enquiry form and choose the division your request is for. Include dates, venue or quantities if you have them.</p>
+        <p><a href="technical-sound.html">Technical Sound &amp; Live Staging</a><br><a href="printing.html">Siyakha Print Solutions</a></p>
+      </div>
+      <form id="enquiry-form" class="form" method="post" novalidate data-endpoint="https://formspree.io/f/YOUR_FORM_ID">
+        <h2 id="form-title">Send an enquiry</h2>
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><span class="err" id="name-err"></span></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err"><span class="err" id="email-err"></span></div>
+        <div class="field"><label for="phone">Phone number <span class="opt">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="field"><label for="division">Enquiry about</label>
+          <select id="division" name="division" required aria-describedby="division-err"><option value="">Choose a division</option><option value="sound">Technical Sound &amp; Live Staging</option><option value="print">Siyakha Print Solutions</option></select><span class="err" id="division-err"></span></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" required aria-describedby="message-err"></textarea><span class="err" id="message-err"></span></div>
+        <div class="hp" aria-hidden="true"><label for="_gotcha">Leave this empty</label><input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <img src="assets/logos/siyakha-logo.jpg" alt="Siyakha Productions logo" width="115" height="64" loading="lazy">
+      <p>Technical sound, live staging and print solutions from one company.</p>
+    </div>
+    <nav aria-label="Footer">
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="technical-sound.html">Technical Sound</a></li>
+        <li><a href="printing.html">Printing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contact</h2>
+      <!-- Add verified phone, email and address here once supplied -->
+      <p><a href="contact.html">Send an enquiry online</a></p>
+    </div>
+  </div>
+  <div class="wrap legal">&copy; <span id="year">2026</span> Siyakha Productions. All rights reserved.</div>
+</footer>
+<script src="js/main.js"></script><script src="js/forms.js"></script>
+</body>
+</html>
